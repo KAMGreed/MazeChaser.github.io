@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Imani's Maze Chaser</title>
+    <link rel="stylesheet" type="text/css" href="game.css" />
+</head>
+  <body>
+    <div id="game-container">
+      <div id="hud"></div>
+      <canvas id="canvas"></canvas>
+      <canvas id="minimap"></canvas>
+      <img id="camera" src="camera.png">
+      <div id="screenshot-wrapper"><canvas id="screenshot"></canvas></div>
+      <div id="instructions-panel">
+        <div id="instructions-title">Imani's Maze Chaser</div>
+        <div id="instructions-text">Use the arrow keys (w, s) to move player forward or backward, or (a, d) to rotate clockwise or counter-clockwise.</div>
+        <div id="instructions-text">Space-bar snaps a photo.</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="filtrr2.js"></script>
+    <script type="text/javascript" src="jaws.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <script>
+      jaws.assets.add(["dino.png"])
+      jaws.start(Game);
+    </script>
+  </body>
+</html>
